@@ -1,0 +1,99 @@
+body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.upload-container {
+    padding: 20px;
+    background-color: #1e1e2f;
+    border-radius: 12px;
+    max-width: 500px;
+    width: 90%;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 0.8s ease-out;
+    margin: 0 auto;
+}
+
+
+.upload-title {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #ffffff;
+    font-weight: 600;
+    animation: slideDown 0.5s ease-out;
+}
+
+.filepond-custom {
+    margin-bottom: 20px;
+}
+.upload-title:hover{
+    color: #00ffcc;
+}
+
+.upload-button {
+    padding: 8px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    box-shadow: 0 4px 10px rgba(0, 123, 255, 0.3);
+    animation: fadeInUp 0.6s ease-out;
+    margin-right: 10px;
+}
+
+.upload-button:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 123, 255, 0.4);
+}
+
+.upload-success {
+    margin-top: 15px;
+    color: #28a745;
+    font-weight: 500;
+    animation: fadeIn 0.5s ease-out;
+}
+
+.filepond--root {
+    --filepond-drop-label-color: #aaa;
+    --filepond-drop-label-background: #2a2a3d;
+    --filepond-bg-color: #2a2a3d;
+    --filepond-button-background-color: #3b3b5c;
+    --filepond-button-color: #fff;
+    --filepond-button-hover-background-color: #4a4a6e;
+    border-radius: 8px;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

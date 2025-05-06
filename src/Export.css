@@ -1,0 +1,112 @@
+.export-container {
+    background-color: #1e1e2f;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    animation: fadeIn 0.8s ease-in-out;
+    max-width: 500px;
+    margin: 30px auto;
+}
+
+.export-title {
+    color: #fff;
+    margin-bottom: 15px;
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+.export-title:hover {
+    color: #00ffcc;
+}
+
+/*.download-link {
+    color: #00ffcc;
+    cursor: pointer;
+    margin-bottom: 20px;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}*/
+
+.download-link {
+    padding: 8px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    box-shadow: 0 4px 10px rgba(0, 123, 255, 0.3);
+    animation: fadeInUp 0.6s ease-out;
+    margin-right: 10px;
+}
+
+.download-link:hover,.back-button:hover {
+    transform: scale(1.1);
+}
+
+
+.export-button {
+    padding: 8px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    box-shadow: 0 4px 10px rgba(0, 123, 255, 0.3);
+    animation: fadeInUp 0.6s ease-out;
+    margin-right: 10px;
+}
+
+.back-button {
+    padding: 8px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    box-shadow: 0 4px 10px rgba(0, 123, 255, 0.3);
+    animation: fadeInUp 0.6s ease-out;
+    margin-right: 10px;
+}
+
+.export-button:hover {
+    background-color: #009977;
+    box-shadow: 0 0 15px rgba(0, 255, 204, 0.8);
+    transform: translateY(-3px);
+}
+
+
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 768px) {
+    .export-container {
+        padding: 15px;
+    }
+    .export-title {
+        font-size: 20px;
+    }
+    .export-button, .back-button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .export-title {
+        font-size: 18px;
+    }
+    .export-button, .back-button {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+}
